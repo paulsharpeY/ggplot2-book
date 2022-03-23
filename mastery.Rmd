@@ -86,7 +86,7 @@ The process for mapping the colour is a little more complicated, as we have a no
 knitr::include_graphics("diagrams/colour-wheel.png", dpi = 300)
 ```
 
-The result of these conversions is below. As well as aesthetics that have been mapped to variable, we also include aesthetics that are constant. We need these so that the aesthetics for each point are completely specified and R can draw the plot. The points will be filled circles (shape 19 in R) with a 1-mm diameter:
+The result of these conversions is below. As well as aesthetics that have been mapped to variables, we also include aesthetics that are constant. We need these so that the aesthetics for each point are completely specified and R can draw the plot. The points will be filled circles (shape 19 in R) with a 1-mm diameter:
 
 ```{r scaled, echo = FALSE}
 rescale01 <- function(x) (x - min(x)) / (max(x) - min(x))
